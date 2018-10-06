@@ -1369,3 +1369,87 @@ work Section style
     color: #ff0000;
 }
 
+.apple{
+    position: absolute !important;
+    height: 100px;
+    width: 150px;
+}
+.google{
+    position: absolute !important;
+    height: 70px;
+    width: 150px;
+}
+.suvidha-logo{
+    position: absolute !important;
+    height: 200px;
+    width: 200px;
+}
+.iphone{
+    position: relative !important;
+}
+
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+    .apple{
+        left: 60px ; top: 190px ;
+    }
+    .google{
+        left: 60px; top: 300px;
+    }
+    .suvidha-logo{
+        left: 40px; top: 60px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+    .apple{
+        top: 35%;
+        left: 25%;
+    }
+    .google{
+        top: 60%;
+        left: 25%;
+    }
+    .suvidha-logo{
+        top: 9%;
+        left: 17%;
+    }
+}
+
+/* portrait phones */
+/* @media only screen and (max-width: 767px) and (orientation: portrait) {
+    
+    .apple{
+
+    }
+    .google{
+
+    }
+    .suvidha-logo{
+        
+    }
+} */
+
+
+
+@media (min-width:765px) and (max-width:1024px) {
+    .apple{
+        top: 35%;
+        left: 25%;
+        height: 75px;
+        width: 100px;
+    }
+    .google{
+        top: 60%;
+        left: 25%;
+        height: 75px;
+        width: 100px;
+    }
+    .suvidha-logo{
+        top: 16%;
+        left: 24%;
+        height: 100px;
+        width: 100px;
+    }
+}
