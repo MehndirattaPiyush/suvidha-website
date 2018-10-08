@@ -999,7 +999,7 @@ Featured section style
     position: relative;
 }
 .business_overlay{
-    background-color: rgba(44,130,201,0.5);
+    background-color: #fff;
     width:100%;
     height: 100%;
     left:0;
@@ -1369,6 +1369,15 @@ work Section style
     color: #ff0000;
 }
 
+
+/* custom design */
+
+.download-now{
+    position: absolute !important;
+    color: black;
+    font-weight: 700;
+}
+
 .apple{
     position: absolute !important;
     height: 100px;
@@ -1390,8 +1399,11 @@ work Section style
 
 @media only screen and (min-width: 768px) {
     /* tablets and desktop */
+    .download-now{
+        left: 80px; top: 190px;
+    }
     .apple{
-        left: 60px ; top: 190px ;
+        left: 60px ; top: 200px ;
     }
     .google{
         left: 60px; top: 300px;
@@ -1403,8 +1415,12 @@ work Section style
 
 @media only screen and (max-width: 767px) {
     /* phones */
-    .apple{
+    .download-now{
         top: 35%;
+        left: 35%;
+    }
+    .apple{
+        top: 40%;
         left: 25%;
     }
     .google{
@@ -1434,8 +1450,12 @@ work Section style
 
 
 @media (min-width:765px) and (max-width:1024px) {
+    .download-now{
+        top: 33%;
+        left: 25%;
+    }
     .apple{
-        top: 35%;
+        top: 40%;
         left: 25%;
         height: 75px;
         width: 100px;
